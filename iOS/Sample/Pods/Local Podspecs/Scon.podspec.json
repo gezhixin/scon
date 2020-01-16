@@ -1,0 +1,18 @@
+{
+  "name": "Scon",
+  "version": "1.0.0",
+  "summary": "Scon source code",
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.10"
+  },
+  "license": "MIT",
+  "authors": "Aaronge",
+  "homepage": "http://git.code.oa.com/kuaibao/DeviceLogViewer",
+  "source": {
+    "git": "http://git.code.oa.com/kuaibao/DeviceLogViewer.git"
+  },
+  "requires_arc": true,
+  "source_files": "Src/Scon/Src/*.{h,m}",
+  "public_header_files": "Src/Scon/Src/*.h"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "SconKit",
+  "version": "1.0.0",
+  "summary": "SconKit source code",
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.10"
+  },
+  "license": "MIT",
+  "authors": "Aaronge",
+  "homepage": "https://github.com/gezhixin/Scon",
+  "source": {
+    "git": "https://github.com/gezhixin/Scon.git"
+  },
+  "requires_arc": true,
+  "source_files": "Src/SconKit/Src/*.{h,m}",
+  "public_header_files": "Src/SconKit/Src/*.h",
+  "dependencies": {
+    "CocoaLumberjack": [
+
+    ],
+    "CocoaAsyncSocket": [
+
+    ],
+    "SocketRocket": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Bonjour",
+      "source_files": "Src/SconKit/Src/Bonjour/*.{h,m}",
+      "public_header_files": "Src/SconKit/Src/Bonjour/*.h",
+      "resources": "Src/SconKit/Src/Bonjour/bonjour.bundle"
+    },
+    {
+      "name": "Plugin",
+      "source_files": "Src/SconKit/Src/Plugin/Log/*.{h,m}",
+      "public_header_files": "Src/SconKit/Src/Plugin/Log/*.h"
+    }
+  ]
+}

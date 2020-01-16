@@ -1,0 +1,20 @@
+Release/obj.target/scon/SconJsBridge.o: ../SconJsBridge.mm \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/node.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/v8.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/v8-internal.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/v8-version.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/v8config.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/v8-platform.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/node_version.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/uv.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/uv/errno.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/uv/version.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/uv/unix.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/uv/threadpool.h \
+  /Users/aaronge/Library/Caches/node-gyp/13.6.0/include/node/uv/darwin.h \
+  ../../Src/Scon.h ../../Src/SconConnection.h ../../Src/SconMsgHandler.h \
+  ../../Src/SconMsg.h ../../Src/SconPluginProtocol.h \
+  .././Bonjour/SCLSocketConnection.h \
+  ../Bonjour/CocoaAsyncSocket/source/GCD/GCDAsyncSocket.h \
+  ../Bonjour/SCRemoteDeviceInfo.h .././Bonjour/SCRemoteDeviceInfo.h \
+  .././Bonjour/SCLocalSocketService.h
