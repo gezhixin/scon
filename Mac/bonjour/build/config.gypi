@@ -67,7 +67,7 @@
     "v8_use_siphash": 1,
     "want_separate_host_toolset": 0,
     "xcode_version": "11.0",
-    "nodedir": "/Users/aaronge/Library/Caches/node-gyp/13.6.0",
+    "nodedir": "/Users/zhixinge/Library/Caches/node-gyp/13.6.0",
     "standalone_static_library": 1
   }
 }

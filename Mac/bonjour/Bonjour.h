@@ -25,6 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)stop;
 
+- (void)browerWithType:(NSString *)type inDomain:(NSString *)domain listChanged:(void(^)(NSArray<ServerInfo *> *servcies))listChanged;
+
+- (void)stopBrower;
+
 @end
 
 NS_ASSUME_NONNULL_END

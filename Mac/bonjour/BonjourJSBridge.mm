@@ -74,6 +74,46 @@ namespace bonjour {
         return nullptr;
     }
 
+    napi_value Brower (napi_env env, napi_callback_info info) {
+        size_t argc = 2;
+        napi_value args[2];
+        NAPI_CALL(env, napi_get_cb_info(env, info, &argc, args, NULL, NULL));
+        NAPI_ASSERT(env, argc == 1, "Not enough arguments, expected 3.");
+
+        size_t psize = 0;
+        char domain[256];
+        char type[256];
+        napi_value value_1;
+        napi_value name_1;
+        NAPI_CALL(env, napi_create_string_utf8(env, "domain", NAPI_AUTO_LENGTH, &name_1));
+        NAPI_CALL(env, napi_get_property(env, args[0], name_1, &value_1));
+        NAPI_CALL(env,napi_get_value_string_utf8(env, value_1, domain, 256, &psize));
+
+        napi_value value_2;
+        napi_value name_2;
+        NAPI_CALL(env, napi_create_string_utf8(env, "type", NAPI_AUTO_LENGTH, &name_2));
+        NAPI_CALL(env, napi_get_property(env, args[0], name_2, &value_2));
+        NAPI_CALL(env,napi_get_value_string_utf8(env, value_2, type, 256, &psize));
+        
+        napi_value func = args[1];
+        napi_valuetype func_type;
+        NAPI_CALL(env, napi_typeof(env, func, &func_type));
+
+        
+        NSString *domainStr = [NSString stringWithUTF8String:domain];
+        NSString *typeStr = [NSString stringWithUTF8String:type];
+        
+        if (g_bonjour) {
+            g_bonjour = [[Bonjour alloc] init];
+        }
+        
+        [g_bonjour browerWithType:typeStr inDomain:domainStr listChanged:^(NSArray<ServerInfo *> * _Nonnull servcies) {
+            
+        }];
+
+        return nullptr;
+    }
+
     napi_value init(napi_env env, napi_value exports) {
         napi_status status;
         napi_value fn;

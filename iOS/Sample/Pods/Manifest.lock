@@ -1,11 +1,8 @@
 PODS:
   - CocoaAsyncSocket (7.6.3)
-  - CocoaLumberjack (3.4.2):
-    - CocoaLumberjack/Default (= 3.4.2)
-    - CocoaLumberjack/Extensions (= 3.4.2)
-  - CocoaLumberjack/Default (3.4.2)
-  - CocoaLumberjack/Extensions (3.4.2):
-    - CocoaLumberjack/Default
+  - CocoaLumberjack (3.6.0):
+    - CocoaLumberjack/Core (= 3.6.0)
+  - CocoaLumberjack/Core (3.6.0)
   - Scon (1.0.0)
   - SconKit (1.0.0):
     - CocoaAsyncSocket
@@ -31,7 +28,6 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - CocoaAsyncSocket
     - CocoaLumberjack
-  trunk:
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -42,11 +38,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
   Scon: 8aee2b4f8cbded78d9c30841a64cf8451f01b0e3
   SconKit: e754c9c7dcb0ecb2e5fe88e84aa9831de2ea86c4
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
 
-PODFILE CHECKSUM: aaa31bfb2858a9bf2c1721327bd962b3c27f8092
+PODFILE CHECKSUM: d460641bf65446790f83b4c5d78b5281e4121430
 
 COCOAPODS: 1.8.4
