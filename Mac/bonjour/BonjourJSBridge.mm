@@ -78,7 +78,7 @@ namespace bonjour {
         size_t argc = 2;
         napi_value args[2];
         NAPI_CALL(env, napi_get_cb_info(env, info, &argc, args, NULL, NULL));
-        NAPI_ASSERT(env, argc == 1, "Not enough arguments, expected 3.");
+        NAPI_ASSERT(env, argc == 2, "Not enough arguments, expected 3.");
 
         size_t psize = 0;
         char domain[256];
@@ -98,7 +98,9 @@ namespace bonjour {
         napi_value func = args[1];
         napi_valuetype func_type;
         NAPI_CALL(env, napi_typeof(env, func, &func_type));
-
+        NAPI_ASSERT(env, func_type == napi_function, "args[1] not function");
+        
+        
         
         NSString *domainStr = [NSString stringWithUTF8String:domain];
         NSString *typeStr = [NSString stringWithUTF8String:type];
